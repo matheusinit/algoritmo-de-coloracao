@@ -1,22 +1,22 @@
+package Coloring;
 
-// Classe Grafo
-import Graph;
-// Classe Vertice do grafo
-import Vertice;
+import Graph.Graph;
+import Graph.Vertice;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
 public class Coloracao {
     private Graph graph;
     // Primeiro ArrayList
-    private ArrayList<ArrayList<Vertice>> verticesColorado;
+    private ArrayList<ArrayList<Vertice>> verticesColorado = new ArrayList<>();
 
     public Coloracao(Graph graph) {
         this.graph = graph;
     }
 
     public ArrayList<ArrayList<Vertice>> handle() {
-        ArrayList<Vertice> vertices = (ArrayList<Vertice>) graph.vertices();
+        Vector<Vertice> vertices = (Vector<Vertice>) graph.vertices();
 
         ArrayList<Vertice> verticesOrdenadoPorGrau = new ArrayList<>();
 
@@ -104,4 +104,5 @@ public class Coloracao {
 
         return verticesColorado;
     }
+
 }

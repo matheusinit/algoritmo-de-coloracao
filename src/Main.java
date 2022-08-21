@@ -1,3 +1,7 @@
+import Graph.Graph;
+import Graph.Vertice;
+import Coloring.Coloracao;
+
 import java.util.ArrayList;
 
 public class Main {
